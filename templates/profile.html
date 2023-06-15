@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/profile.css') }}">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <title>Weather Spoons</title>
+</head>
+
+<body>
+
+  <!-- NAV BAR INFO START -->
+  <ul>
+    <li><a class="active" href="/profile">Profile</a></li>
+    <li><a href="/favorites">Favorites</a></li>
+    <li><a href="/home">New Recipes</a></li>
+    <li><a href="/newuser">Zipcode</a></li>
+    <li style="float:right"><a href="/index">Sign Off</a></li>
+</ul>
+
+
+  <!-- NAV BAR INFO END -->
+
+
+
+  <div class="container">
+      <img class="image" src="{{ avatar }}">
+  </div>
+
+
+  <div class="profile-box">
+      <h1> <strong><u>Profile</u> </strong></h1>
+      <p>Username: {{username | safe}}</p>
+      <p>Real Name: {{realname | safe}}</p>
+      <p>Zipcode: {{zipcode | safe}}</p>
+  </div>
+
+
+</body>
+
+</html>

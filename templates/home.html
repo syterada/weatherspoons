@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/recipeFound.css') }}">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <title>Weather Spoons</title>
+</head>
+
+<body>
+
+
+  <!-- NAV BAR INFO START -->
+  <ul>
+    <li><a href="/profile">Profile</a></li>
+    <li><a href="/favorites">Favorites</a></li>
+    <li><a class="active" href="/home">New Recipes</a></li>
+    <li><a href="/newuser">Zipcode</a></li>
+    <li style="float:right"><a href="/index">Sign Off</a></li>
+</ul>
+
+
+<!-- NAV BAR INFO END -->
+
+
+
+
+<div class="two-boxes">
+
+  <div class="recipe-box">
+    <h1> Recipe Found! </h1>
+  </div>
+
+  <div class="weather-box">
+    <p>The weather in {{city}} {{zipcode}} is currently {{forecast}} <br>
+      based on the weather, we recommend this recipe: </p>
+  </div>
+
+</div>
+
+<div class="results-box">
+  <a href={{sourceUrl}} target="_blank" style="font-size: 25px; color:black;">{{title}}</a>
+  <br><img src="{{image}}" alt="">
+
+  <form action = "/favorites" method = "POST">
+    <button name="/addfavtn" class="Fav-button"> &#9733; Favorite </button>
+  </form>
+  
+</div>
+
+</body>
+
+</html>

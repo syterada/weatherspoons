@@ -1,0 +1,64 @@
+body {
+    font-family: 'Raleway';
+    background-color: rgb(199, 179, 147);
+    border: 12px solid rgb(48, 48, 48);
+    padding-top: 10px;
+}
+
+.SignIn-button {
+    font-family: 'Raleway';
+    color: black;
+    height: 60px;
+    width: 150px;
+    cursor: pointer;
+    margin-right: 8px;
+    vertical-align: top;
+    font-size: large;
+    margin-left: 600px;
+    margin-bottom: 100px;
+}
+
+.SignIn-button:hover {
+    color:white;
+
+}
+
+.SignIn-button:active {
+    opacity: 0.5;
+}
+
+
+.container {
+    position: relative;
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+.image {
+    height: 300px;
+    width: auto;
+    border-color: rgb(174, 154, 122);
+    border-width: 25px;
+    border-style: solid;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 80px;
+    left: 300px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+
+.logo {
+    display: inline-block;
+    margin-top: 130px;
+}
+
+a {
+    color: black;
+}

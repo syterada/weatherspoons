@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/recipeFound.css') }}">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <title>Weather Spoons</title>
+</head>
+
+<body>
+
+
+  <!-- NAV BAR INFO START -->
+  <ul>
+      <li><a href="/profile">Profile</a></li>
+      <li><a class="active" href="/favorites">Favorites</a></li>
+      <li><a href="/home">New Recipes</a></li>
+      <li><a href="/newuser">Zipcode</a></li>
+      <li style="float:right"><a href="/index">Sign Off</a></li>
+  </ul>
+
+  <!-- NAV BAR INFO END -->
+
+<div class="two-boxes">
+
+
+  <div class="recipe-box">
+      <h1> Favorites </h1>
+    </div>
+
+</div>
+
+{% if bool == False %}
+<div class="results-box">
+  <p style="font-size: 25px; color:black;">No favorites yet!</a>
+  <br><img src="{{ url_for('static', filename='/images/mainImage.jpeg') }}" width="556px" alt="">
+</div>
+{% endif %}
+
+{% if bool == True %}
+<div class="results-box">
+  <a href={{favurl}} target="_blank" style="font-size: 25px; color:black;">{{favtitle}}</a>
+  <br><img src="{{favimg}}" alt="">
+</div>
+{% endif %}
+
+</body>
+
+</html>

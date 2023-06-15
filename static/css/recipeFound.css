@@ -1,0 +1,150 @@
+body {
+    font-family: 'Raleway';
+    background-color: rgb(199, 179, 147);
+    border: 12px solid rgb(48, 48, 48);
+    padding-top: 10px;
+}
+
+p {
+    font-size: large;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+.two-boxes {
+    display:inline-block;
+}
+
+.recipe-box {
+    margin-top: 75px;
+    margin-left: 100px;
+    margin-right: 50px;
+    height: 150px;
+    width:150px;
+
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+
+    color: rgb(48, 48, 48);
+    border-color: rgb(48, 48, 48);
+    border-width: 8px;
+    border-style: solid;
+    text-align: left;
+    display: inline-block;
+
+
+}
+
+
+
+
+.weather-box {
+    margin-top: 25px;
+    margin-left: 100px;
+    height: 150px;
+    width:150px;
+
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+
+    color: rgb(48, 48, 48);
+    border-color: rgb(48, 48, 48);
+    border-width: 8px;
+    border-style: solid;
+    text-align: left;
+
+
+}
+
+
+.results-box {
+
+    margin-top: 50px;
+    margin-bottom: 100px;
+    height: 500px;
+    width:600px;
+
+
+    color: rgb(48, 48, 48);
+    border-color: rgb(48, 48, 48);
+    border-width: 10px;
+    border-style: solid;
+    text-align: left;
+    padding-top: 100px;
+    padding-left: 200px;
+    padding-bottom: 10px;
+    display: inline-block;
+    vertical-align: top;
+
+    width: 750px;
+
+}
+
+
+/* NAVBAR INFO*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    top: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(144, 144, 144);
+  }
+  
+  .active {
+      background-color: rgb(174, 154, 122);
+  }
+
+  .Fav-button {
+    font-family: 'Raleway';
+    background-color: rgb(204, 204, 204);
+    color: black;
+    border: solid;
+    height: 60px;
+    width: 150px;
+    border-color:  rgb(48, 48, 48);
+    border-width: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 8px;
+    font-size: large;
+    display: block;
+    margin-bottom: 100px;
+    margin-left: 200px;
+}
+
+.Fav-button:hover {
+    background-color:  rgb(48, 48, 48);
+    color:white
+
+}
+
+.Fav-button:active {
+    opacity: 0.5;
+}

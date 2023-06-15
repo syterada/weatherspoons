@@ -1,0 +1,96 @@
+body {
+    font-family: 'Raleway';
+    background-color: rgb(199, 179, 147);
+    border: 12px solid rgb(48, 48, 48);
+    padding-top: 10px;
+}
+
+p {
+    font-size: large;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: auto;
+
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+
+.image {
+    margin-top: 50px;
+    margin-left: 100px;
+    height: 200px;
+    width: 200px;
+    border-color: rgb(48, 48, 48);
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 500px;
+
+}
+
+.profile-box {
+
+    margin-bottom: 100px;
+    margin-left: 200px;
+    margin-right: 100px;
+    height: 500px;
+    width:700px;
+
+
+    color: rgb(48, 48, 48);
+    border-color: rgb(48, 48, 48);
+    border-width: 10px;
+    border-style: solid;
+    text-align: left;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    display: inline-block;
+
+}
+
+
+
+
+/* NAVBAR INFO*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  top: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(144, 144, 144);
+}
+
+.active {
+    background-color: rgb(174, 154, 122);
+}
